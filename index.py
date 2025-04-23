@@ -6,9 +6,9 @@ from datetime import date
 # -----------------------------
 EVENTS = [
     ("Exams Begin - RPA Exam", date(2025, 4, 30)),
-    ("Computer Vision Exam", date(2025, 5, 3)),
-    ("Reinforcement Learning Exam", date(2025, 5, 8)),
-    ("Exams get over", date(2025, 5, 10)),
+    ("2 Exams Done - Computer Vision Exam", date(2025, 5, 3)),
+    ("3 Exams Done - Reinforcement Learning Exam", date(2025, 5, 8)),
+    ("Exams over", date(2025, 5, 10)),
 ]
 
 # -----------------------------
