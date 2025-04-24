@@ -1,5 +1,8 @@
 import streamlit as st
 from datetime import date
+from datetime import datetime
+import pytz
+
 
 
 
@@ -42,7 +45,8 @@ track_label = "" if is_ai else ""
 # Main view
 # ────────────────────────────────────────────────
 
-today = date.today()
+india = pytz.timezone("Asia/Kolkata")
+today = datetime.now(india).date()
 upcoming_events = [(label, d) for label, d in selected_events if d >= today]
 
 if upcoming_events:
