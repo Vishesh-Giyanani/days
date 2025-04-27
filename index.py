@@ -54,10 +54,11 @@ if upcoming_events:
     for label, d in upcoming_events:
         remaining = days_left(d, today)
         with st.container(border=True):
-            st.markdown(f"❌ **{label}**")
             if remaining == 0:
+                st.markdown(f"✅ **{label}**")
                 st.markdown("**Today!** 🎯")
             else:
+                st.markdown(f"❌ **{label}**")
                 st.markdown(f"{remaining} day{'s' if remaining != 1 else ''} remaining")
 else:
     st.markdown(
